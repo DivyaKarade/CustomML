@@ -8,13 +8,11 @@ numpy
 matplotlib==3.3.4
 scikit-learn==0.23.1
 lazypredict==0.2.7
-seaborn==0.11.2
 xgboost==1.1.1
 lightgbm==2.3.1
 pytest==5.4.3
 tqdm==4.56.0
 sweetviz==2.0.6
-yellowbrick==1.1
 pubchempy==1.0.4
 mols2grid==0.0.6
 
