@@ -12,7 +12,7 @@ from sklearn.ensemble import IsolationForest
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from tensorflow import set_random_seed
+#from tensorflow import set_random_seed
 from sklearn import metrics
 import io
 from io import BytesIO
