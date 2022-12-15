@@ -18,7 +18,7 @@ import io
 from io import BytesIO
 import tensorflow as tf
 from keras import backend as K
-from lazypredict.Supervised import LazyRegressor, LazyClassifier
+#from lazypredict.Supervised import LazyRegressor, LazyClassifier
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 from sklearn.linear_model import LogisticRegression
 import sweetviz
