@@ -1,20 +1,22 @@
 rdkit-pypi
 mordred[full]
-keras
+keras==2.6.0
 tensorflow
-streamlit==0.89.0
-pandas
-numpy
-matplotlib==3.3.4
-scikit-learn
-lazypredict
+streamlit==1.4.0
+pandas==1.3.3
+numpy==1.21.2
+matplotlib==3.4.3
+scikit-learn==0.24.2
+lazypredict==0.2.9
 xgboost==1.1.1
 lightgbm==2.3.1
 pytest==5.4.3
 tqdm==4.56.0
-sweetviz==2.0.6
+sweetviz==2.1.3
 pubchempy==1.0.4
-mols2grid==0.0.6
+mols2grid==0.4.0
+Pillow==8.4.0
+
 
 
 
