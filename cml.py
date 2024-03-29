@@ -321,7 +321,7 @@ if add_selectbox == "Auto-Multi-ML":
             X_train = sc.fit_transform(X_train)
             X_test = sc.transform(X_test)
 
-            classifier = LogisticRegression()
+            classifier = LogisticRegression(solver='lbfgs', max_iter=1000)
             classifier.fit(X_train, y_train)
             y_pred = classifier.predict(X_test)
 
