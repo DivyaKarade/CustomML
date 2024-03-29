@@ -316,14 +316,14 @@ if add_selectbox == "Auto-Multi-ML":
                 st.download_button('Download CSV', data.to_csv(), 'data.csv', 'text/csv')
                 st.sidebar.warning('Prediction Created Sucessfully!')
 
-        if choose_model == 'Logistic Regression':
-            sc = StandardScaler()
-            X_train = sc.fit_transform(X_train)
-            X_test = sc.transform(X_test)
+        #if choose_model == 'Logistic Regression':
+            #sc = StandardScaler()
+            #X_train = sc.fit_transform(X_train)
+            #X_test = sc.transform(X_test)
 
-            classifier = LogisticRegression(solver='lbfgs', max_iter=1000)
-            classifier.fit(X_train, y_train)
-            y_pred = classifier.predict(X_test)
+            #classifier = LogisticRegression(solver='lbfgs', max_iter=1000)
+            #classifier.fit(X_train, y_train)
+            #y_pred = classifier.predict(X_test)
 
             if st.sidebar.button("✨ PREDICT"):
                 st.info('**Model Evaluation for Logistic Regression**')
