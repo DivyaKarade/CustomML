@@ -11,7 +11,7 @@ from numpy.random import seed
 from sklearn.ensemble import IsolationForest
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn import metrics
 import io
 from io import BytesIO
@@ -48,12 +48,12 @@ st.set_option('deprecation.showfileUploaderEncoding', False)
 
 # Create title and subtitle
 html_temp = """
-		<div style="background-color:teal">
-		<h1 style="font-family:arial;color:white;text-align:center;">AIDrugApp</h1>
-		<h4 style="font-family:arial;color:white;text-align:center;">Artificial Intelligence Based Virtual Screening Web-App for Drug Discovery</h4>
-		</div>
-		<br>
-		"""
+        <div style="background-color:teal">
+        <h1 style="font-family:arial;color:white;text-align:center;">AIDrugApp</h1>
+        <h4 style="font-family:arial;color:white;text-align:center;">Artificial Intelligence Based Virtual Screening Web-App for Drug Discovery</h4>
+        </div>
+        <br>
+        """
 st.markdown(html_temp, unsafe_allow_html=True)
 
 st.sidebar.title("AIDrugApp v1.2.4")
