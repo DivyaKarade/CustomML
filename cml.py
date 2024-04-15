@@ -1,45 +1,45 @@
 import math
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-import sklearn.metrics
+#import sklearn.metrics
 import streamlit as st
-from keras.callbacks import EarlyStopping
-from keras.layers import *
-from keras.models import Sequential
-from numpy.random import seed
-from sklearn.ensemble import IsolationForest
+#from keras.callbacks import EarlyStopping
+#from keras.layers import *
+#from keras.models import Sequential
+#from numpy.random import seed
+#from sklearn.ensemble import IsolationForest
 from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
+#from sklearn.model_selection import train_test_split
+#from sklearn.preprocessing import StandardScaler
 from sklearn import metrics
-import io
-from io import BytesIO
-import tensorflow as tf
-from keras import backend as K
+#import io
+#from io import BytesIO
+#import tensorflow as tf
+#from keras import backend as K
 from lazypredict import LazyClassifier, LazyRegressor
 # from lazypredict.Supervised import LazyRegressor, LazyClassifier
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 from sklearn.linear_model import LogisticRegression
 import sweetviz
 import codecs
-import streamlit.components.v1 as components
-from sklearn.feature_selection import VarianceThreshold
+#import streamlit.components.v1 as components
+#from sklearn.feature_selection import VarianceThreshold
 from sklearn.tree import DecisionTreeClassifier
 from sklearn import svm
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn import linear_model
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
-from mordred import Calculator, descriptors
-from rdkit import Chem, DataStructs
-from rdkit.Chem import Descriptors, Draw, AllChem, MACCSkeys
-from rdkit.ML.Descriptors import MoleculeDescriptors
-import pubchempy as pcp
-from pubchempy import Compound
-from pubchempy import get_compounds
-import mols2grid
-from PIL import Image
-import urllib
+#from mordred import Calculator, descriptors
+#from rdkit import Chem, DataStructs
+#from rdkit.Chem import Descriptors, Draw, AllChem, MACCSkeys
+#from rdkit.ML.Descriptors import MoleculeDescriptors
+#import pubchempy as pcp
+#from pubchempy import Compound
+#from pubchempy import get_compounds
+#import mols2grid
+#from PIL import Image
+#import urllib
 
 # Page expands to full width
 st.set_page_config(page_title='AIDrugApp', page_icon='🌐', layout="wide")
@@ -57,22 +57,24 @@ html_temp = """
         """
 st.markdown(html_temp, unsafe_allow_html=True)
 
-st.sidebar.title("AIDrugApp v1.2.4")
+st.sidebar.title("AIDrugApp v1.2.5")
 
-st.sidebar.header("Custom ML Menu")
+#st.sidebar.header("Custom ML Menu")
 
-add_selectbox = st.sidebar.radio("Select ML tool", ("Auto-Multi-ML", "Auto-DL", "DesCal", "Mol_Identifier"))
+#add_selectbox = st.sidebar.radio("Select ML tool", ("Auto-Multi-ML", "Auto-DL", "DesCal", "Mol_Identifier"))
 
-if add_selectbox == "Auto-Multi-ML":
+CB = st.sidebar.checkbox("Auto-Multi-ML")
+
+if CB == "Auto-Multi-ML":
     st.title('Auto-Multi-ML')
     st.success(
-        "This module of **AIDrugApp v1.2.4** aids in the development and comparison of multiple machine learning models on user data in order to select the best performing machine learning algorithm. "
+        "This module of [**AIDrugApp v1.2.5**](https://aidrugapp.streamlit.app/) aids in the development and comparison of multiple machine learning models on user data in order to select the best performing machine learning algorithm. "
         " It also helps to predict target data based on user specific machine learning models.")
 
     expander_bar = st.expander("👉 More information")
     expander_bar.markdown("""
     * **Python libraries:** scikit-learn, streamlit, pandas, numpy, lazypredict, sweetviz
-    * **Publication:** Divya Karade. (2021). Custom ML Module of AIDrugApp for Molecular Identification, Descriptor Calculation, and Building ML/DL QSAR Models. [ChemRxiv Preprint] (https://doi.org/10.33774/chemrxiv-2021-3f1f9).
+    * **Publication:** Divya Karade. (2021). Custom ML Module of AIDrugApp for Molecular Identification, Descriptor Calculation, and Building ML/DL QSAR Models. [ChemRxiv Preprint](https://doi.org/10.33774/chemrxiv-2021-3f1f9).
     """)
 
     expander_bar = st.expander("👉 How to use Auto-Multi-ML?")
