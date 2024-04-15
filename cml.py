@@ -43,6 +43,7 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
 # Page expands to full width
 st.set_page_config(page_title='AIDrugApp', page_icon='🌐', layout="wide")
+
 # For hiding streamlit messages
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.set_option('deprecation.showfileUploaderEncoding', False)
@@ -58,6 +59,7 @@ html_temp = """
 st.markdown(html_temp, unsafe_allow_html=True)
 
 st.sidebar.title("AIDrugApp v1.2.5")
+st.sidebar.header("Menu")
 
 #st.sidebar.header("Custom ML Menu")
 
