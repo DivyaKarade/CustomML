@@ -65,7 +65,8 @@ st.sidebar.title("AIDrugApp v1.2.5")
 
 CB = st.sidebar.checkbox("Auto-Multi-ML")
 
-if CB == "Auto-Multi-ML":
+#if CB == "Auto-Multi-ML":
+if CB:
     st.title('Auto-Multi-ML')
     st.success(
         "This module of [**AIDrugApp v1.2.5**](https://aidrugapp.streamlit.app/) aids in the development and comparison of multiple machine learning models on user data in order to select the best performing machine learning algorithm. "
