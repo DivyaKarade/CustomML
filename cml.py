@@ -1,45 +1,20 @@
-import math
-#import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-#import sklearn.metrics
 import streamlit as st
-#from keras.callbacks import EarlyStopping
-#from keras.layers import *
-#from keras.models import Sequential
-from numpy.random import seed
-from sklearn.ensemble import IsolationForest
-from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn import metrics
-#import io
-#from io import BytesIO
-#import tensorflow as tf
-#from keras import backend as K
 from lazypredict import LazyClassifier, LazyRegressor
-# from lazypredict.Supervised import LazyRegressor, LazyClassifier
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 from sklearn.linear_model import LogisticRegression
 import sweetviz
 import codecs
-#import streamlit.components.v1 as components
 from sklearn.feature_selection import VarianceThreshold
 from sklearn.tree import DecisionTreeClassifier
 from sklearn import svm
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn import linear_model
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
-#from mordred import Calculator, descriptors
-#from rdkit import Chem, DataStructs
-#from rdkit.Chem import Descriptors, Draw, AllChem, MACCSkeys
-#from rdkit.ML.Descriptors import MoleculeDescriptors
-#import pubchempy as pcp
-#from pubchempy import Compound
-#from pubchempy import get_compounds
-#import mols2grid
-#from PIL import Image
-#import urllib
 
 # Page expands to full width
 st.set_page_config(page_title='AIDrugApp', page_icon='🌐', layout="wide")
