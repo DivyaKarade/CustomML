@@ -8,10 +8,10 @@ numpy
 #matplotlib==3.3.4
 scikit-learn
 lazypredict-nightly
-xgboost==1.1.1
-lightgbm==2.3.1
-pytest==5.4.3
-tqdm==4.56.0
+#xgboost==1.1.1
+#lightgbm==2.3.1
+#pytest==5.4.3
+#tqdm==4.56.0
 sweetviz
 #pubchempy==1.0.4
 #mols2grid==0.0.6
