@@ -4,7 +4,6 @@ streamlit
 scikit-learn
 lazypredict-nightly 
 sweetviz
-codecs
 
 
 
