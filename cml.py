@@ -15,6 +15,7 @@ from sklearn import svm
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn import linear_model
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+import streamlit.components.v1 as components
 
 # Page expands to full width
 st.set_page_config(page_title='AIDrugApp', page_icon='🌐', layout="wide")
