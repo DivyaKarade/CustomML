@@ -15,6 +15,7 @@ tqdm==4.66.4
 sweetviz==2.3.1
 #pubchempy==1.0.4
 #mols2grid==0.0.6
+setuptools==69.5.1
 
 
 
