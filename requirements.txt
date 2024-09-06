@@ -1,9 +1,20 @@
-pandas==2.2.2
-numpy==1.22.4
-streamlit
-scikit-learn==1.4.2
-lazypredict-nightly==0.3.2
-sweetviz==2.3.1
+#rdkit-pypi
+#mordred[full]
+#keras
+#tensorflow
+streamlit==0.89.0
+pandas
+numpy
+#matplotlib==3.3.4
+scikit-learn
+lazypredict-nightly
+xgboost==1.1.1
+lightgbm==2.3.1
+pytest==5.4.3
+tqdm==4.56.0
+sweetviz==2.0.6
+#pubchempy==1.0.4
+#mols2grid==0.0.6
 
 
 
