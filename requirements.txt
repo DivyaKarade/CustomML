@@ -17,7 +17,7 @@ lazy_loader
 xgboost==1.1.1
 lightgbm==2.3.1
 pytest==5.4.3
-stqdm==4.56.0
+tqdm==4.56.0
 sweetviz
 #pubchempy==1.0.4
 #mols2grid==0.0.6
