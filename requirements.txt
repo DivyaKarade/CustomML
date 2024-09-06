@@ -2,7 +2,7 @@
 #mordred[full]
 #keras
 #tensorflow
-streamlit==0.89.0
+streamlit
 pandas
 numpy
 #matplotlib==3.3.4
