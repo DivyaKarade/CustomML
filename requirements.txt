@@ -12,7 +12,7 @@ xgboost==1.1.1
 lightgbm==2.3.1
 pytest==5.4.3
 tqdm==4.56.0
-sweetviz==2.0.6
+sweetviz
 #pubchempy==1.0.4
 #mols2grid==0.0.6
 
