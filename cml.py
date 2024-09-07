@@ -47,7 +47,7 @@ CB = st.sidebar.checkbox("Auto-Multi-ML")
 if CB:
     st.title('Auto-Multi-ML')
     st.success(
-        "This module of [**AIDrugApp v1.2.5**](https://aidrugapp.streamlit.app/) aids in the development and comparison of multiple machine learning models on user data in order to select the best performing machine learning algorithm. "
+        "This module of [**AIDrugApp v1.2.6**](https://aidrugapp.streamlit.app/) aids in the development and comparison of multiple machine learning models on user data in order to select the best performing machine learning algorithm. "
         " It also helps to predict target data based on user specific machine learning models.")
 
     expander_bar = st.expander("👉 More information")
