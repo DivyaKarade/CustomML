@@ -34,7 +34,7 @@ html_temp = """
         """
 st.markdown(html_temp, unsafe_allow_html=True)
 
-st.sidebar.title("AIDrugApp v1.2.5")
+st.sidebar.title("AIDrugApp v1.2.6")
 st.sidebar.header("Menu")
 
 #st.sidebar.header("Custom ML Menu")
