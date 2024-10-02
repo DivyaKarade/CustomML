@@ -18,6 +18,24 @@ AIDrugApp is an AI-powered virtual screening web-app for drug discovery. This re
 4. Evaluate the results of different ML models, and select one for further predictions.
 5. Upload descriptor data for predictions, and use the selected ML model to predict target data.
 
+## Installation
+
+1. Install Python and necessary libraries:
+    ```bash
+    pip install streamlit pandas scikit-learn sweetviz lazypredict numpy
+    ```
+
+2. Clone the repository:
+    ```bash
+    git clone https://github.com/DivyaKarade/AIDrugApp.git
+    cd AIDrugApp
+    ```
+
+3. Run the application:
+    ```bash
+    streamlit run app.py
+    ```
+
 ## Python Libraries Used
 
 - scikit-learn
