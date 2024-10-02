@@ -34,8 +34,8 @@ AIDrugApp is an AI-powered virtual screening web-app for drug discovery. This re
 - **Auto-Multi-ML Checkbox**: Enables the Auto-Multi-ML module for model comparison and selection.
 - **Upload .csv Files**: Upload data files for building models and making predictions.
   - Example input files are provided in the repository
-  - [Example .csv input file for ML model building](https://github.com/DivyaKarade/Example-.csv-input-files--AIDrugApp-v1.2)
-  - [Example .csv input file for predictions](https://github.com/DivyaKarade/Example-.csv-input-files--AIDrugApp-v1.2)
+    [Example .csv input file for ML model building](https://github.com/DivyaKarade/Example-.csv-input-files--AIDrugApp-v1.2)
+    [Example .csv input file for predictions](https://github.com/DivyaKarade/Example-.csv-input-files--AIDrugApp-v1.2)
 
 ### Step-by-Step Instructions
 
