@@ -72,7 +72,7 @@ Divya Karade. (2021). Custom ML Module of AIDrugApp for Molecular Identification
 4. The app will open in your default browser.
 
 ## License
-AIDrugApp is licensed under the MIT License. See the `LICENSE` file for more details.
+AIDrugApp is licensed under the AGPL-3.0 license. See the `LICENSE` file for more details.
 
 ## Contributions
 Contributions are welcome. Feel free to submit a pull request or open an issue for discussion.
