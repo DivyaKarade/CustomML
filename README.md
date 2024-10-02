@@ -4,19 +4,11 @@ AIDrugApp is an AI-powered virtual screening web-app for drug discovery. This re
 
 ## Features
 
-- Multiple ML models for classification and regression tasks.
-- Exploratory data analysis (EDA) for uploaded and feature-engineered data.
-- Performance comparison of ML models.
-- Model prediction on user-supplied data.
-- Downloadable data for further analysis.
-
-## How to Use
-
-1. Select the type of algorithm ('Classification' or 'Regression').
-2. Upload your descriptor data file (included with target data).
-3. Select options for EDA and interpreting ML models.
-4. Evaluate the results of different ML models, and select one for further predictions.
-5. Upload descriptor data for predictions, and use the selected ML model to predict target data.
+- **Auto-Multi-ML Module**: Aids in developing and comparing various machine learning models for classification and regression tasks, helping users select the best-performing model for their data.
+- **Exploratory Data Analysis (EDA)**: Provides detailed insights into the uploaded and feature-engineered data.
+- **Multiple Machine Learning Models**: Performance comparison of variety of ML algorithms (e.g., Random Forest, Logistic Regression, Decision Tree).
+- **Data Prediction**: Enables users to predict target data using their trained models.
+- **Downloadable Reports and Data**: Model performance and predictions can be downloaded as CSV files.
 
 ## Installation
 
@@ -36,23 +28,21 @@ AIDrugApp is an AI-powered virtual screening web-app for drug discovery. This re
     streamlit run app.py
     ```
 
-## Python Libraries Used
-
-- scikit-learn
-- Streamlit
-- pandas
-- numpy
-- lazypredict
-- sweetviz
-
 ## Instructions for the Auto-Multi-ML Tool
 
-### User Inputs
+### Sidebar Menu
+- **Auto-Multi-ML Checkbox**: Enables the Auto-Multi-ML module for model comparison and selection.
+- **Upload .csv Files**: Upload data files for building models and making predictions.
+  - Example input files are available [here](https://github.com/DivyaKarade/Example-.csv-input-files--AIDrugApp-v1.2).
 
-- **Algorithm Selection**: Choose between regression and classification tasks.
-- **File Upload**: Upload a .csv file for training the model or for making predictions.
-- **Exploratory Data Analysis**: Optional EDA for uploaded and feature-engineered data.
-- **Model Selection**: Choose your machine learning model from options such as Random Forest, Logistic Regression, Decision Tree, etc.
+### Step-by-Step Instructions
+
+1. **Select Algorithm**: Choose between 'Classification' or 'Regression'.
+2. **Upload Descriptor Data**: Upload a `.csv` file containing descriptor data (with target data for model building).
+3. **Select Exploratory Data Analysis (EDA) Options**: Check the boxes for EDA on uploaded or feature-engineered data.
+4. **Build ML Model**: Evaluate multiple models and select the top-performing one for predictions from options such as Random Forest, Logistic Regression, Decision Tree, etc.
+5. **Upload New Data for Prediction**: Provide data excluding target values to predict using the selected model.
+6. **View and Download Results**: Results are displayed, and users can download predictions.
 
 ### Output
 
@@ -60,7 +50,15 @@ AIDrugApp is an AI-powered virtual screening web-app for drug discovery. This re
 - Predictions based on the selected model.
 - Downloadable CSV files of the results and predictions.
 
-## Example Input Files
+### Exploratory Data Analysis (EDA)
+Enable detailed analysis of the uploaded dataset using Sweetviz. Users can visualize patterns, check correlations, and understand their data before building models.
+
+### Upload CSV Files
+The user can upload two types of CSV files:
+- **Training Data**: For building multiple machine learning models.
+- **Prediction Data**: For applying the best-performing model to new datasets.
+
+## Example Input Files are provided in the repository
 
 - [Example .csv input file for ML model building](https://github.com/DivyaKarade/Example-.csv-input-files--AIDrugApp-v1.2)
 - [Example .csv input file for predictions](https://github.com/DivyaKarade/Example-.csv-input-files--AIDrugApp-v1.2)
@@ -75,5 +73,12 @@ Divya Karade. (2021). Custom ML Module of AIDrugApp for Molecular Identification
 2. Install the required dependencies using `pip install -r requirements.txt`.
 3. Run the app using the command: `streamlit run app.py`.
 4. The app will open in your default browser.
+
+## License
+AIDrugApp is licensed under the MIT License. See the `LICENSE` file for more details.
+
+## Contributions
+Contributions are welcome. Feel free to submit a pull request or open an issue for discussion.
+
 
 For more details on how to use the Auto-Multi-ML module, refer to the [AIDrugApp](https://aidrugapp.streamlit.app/).
