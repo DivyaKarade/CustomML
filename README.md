@@ -1,6 +1,6 @@
 # AIDrugApp: Auto-Multi-ML Module
 
-AIDrugApp is an AI-powered virtual screening web-app for drug discovery. This repository contains the code for the Auto-Multi-ML module, which allows users to develop and compare multiple machine learning models to select the best-performing algorithm for molecular data.
+AIDrugApp is an AI-powered virtual screening web-app for drug discovery. This repository contains the code for the Auto-Multi-ML module, which allows users to develop and compare multiple machine learning models to select the best-performing algorithm for molecular data. Additionally, the app helps predict target data based on user-specific machine learning models.
 
 ## Features
 
