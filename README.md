@@ -19,7 +19,7 @@ AIDrugApp is an AI-powered virtual screening web-app for drug discovery. This re
 
 2. Clone the repository:
     ```bash
-    git clone https://github.com/DivyaKarade/AIDrugApp.git
+    git clone https://github.com/DivyaKarade/CustomML.git
     cd AIDrugApp
     ```
 
