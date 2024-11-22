@@ -1,3 +1,5 @@
+# Dockerfile
+
 # Use a lightweight Python image
 FROM python:3.9-slim
 
@@ -13,8 +15,8 @@ RUN apt-get update && xargs -a packages.txt apt-get install -y
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose the dynamic port
-EXPOSE $PORT
+# Expose Streamlit's default port (8501)
+EXPOSE 8501
 
-# Run the app with Streamlit
-CMD ["streamlit", "run", "cml.py", "--server.port=$PORT", "--server.enableCORS=false", "--server.enableWebsocketCompression=false"]
+# Run the app with Streamlit, specifying port 8501
+CMD ["streamlit", "run", "cml.py", "--server.port=8501", "--server.enableCORS=false", "--server.enableWebsocketCompression=false"]
