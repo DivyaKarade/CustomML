@@ -1,17 +1,20 @@
-FROM python:3.8-slim-buster
+# Use a lightweight Python image
+FROM python:3.9-slim
 
-EXPOSE 8501
-
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    software-properties-common \
-    git \
-    && rm -rf /var/lib/apt/lists/*
-
+# Set the working directory in the container
 WORKDIR /app
 
+# Copy all files from the current directory into the container
 COPY . /app
 
-RUN pip3 install -r requirements.txt
+# Install system dependencies from packages.txt
+RUN apt-get update && xargs -a packages.txt apt-get install -y
 
-ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Expose the dynamic port
+EXPOSE $PORT
+
+# Run the app with Streamlit
+CMD ["streamlit", "run", "cml.py", "--server.port=$PORT", "--server.enableCORS=false", "--server.enableWebsocketCompression=false"]
