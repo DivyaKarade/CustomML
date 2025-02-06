@@ -97,7 +97,7 @@ if CB:
         "Select your algorithm",
         ("Regression", "Classification"))
 
-    st.sidebar.write('**2. Upload data file for building multiple ML models**')
+    st.sidebar.write('**2. Upload training data file for building multiple ML models**')
     uploaded_file = st.sidebar.file_uploader("Upload input .csv file", type=["csv"])
     st.sidebar.markdown("""[Example .csv input files](https://github.com/DivyaKarade/Example-.csv-input-files--AIDrugApp-v1.2)
                                 """)
@@ -105,7 +105,7 @@ if CB:
         '**3. Select checkbox for exploratory data analysis (EDA) and/or for interpreting and comparing multiple ML models**')
     EDA = st.sidebar.checkbox("EDA of uploaded data")
     EDA1 = st.sidebar.checkbox("EDA of feature engineered data")
-    DA = st.sidebar.checkbox("Interpret multiple ML models")
+    DA = st.sidebar.checkbox("Compare multiple ML models")
 
     st.sidebar.write('**4. Select your ML model**')
     choose_model = st.sidebar.selectbox("Select model",
@@ -115,7 +115,7 @@ if CB:
                                          "LinearDiscriminantAnalysis",
                                          "LinearRegression"))
 
-    st.sidebar.write("**5. Upload data file for predictions: **")
+    st.sidebar.write("**5. Upload data file for predictions:**")
     file_upload = st.sidebar.file_uploader("Upload .csv file", type=["csv"])
     st.sidebar.markdown("""[Example .csv input batch file](https://github.com/DivyaKarade/Example-.csv-input-files--AIDrugApp-v1.2)
                                                                         """)
